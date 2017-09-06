@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>aiax</title>
+	<script type="text/javascript" src="./jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<p id="music">歌曲</p>
+	<input type="text" name="song">
+	<button onclick="load()">搜索</button>
+	<script type="text/javascript">
+		// function load(){
+		// 	var xhr=new XMLHttpRequest;
+		// 	var songs=$('input').value;
+		// 	var url='http://s.music.qq.com/fcgi-bin/music_search_new_platform?t=0&n=2&aggr=1&cr=1&loginUin=0&format=json&inCharset=GB2312&outCharset=utf-8&notice=0&platform=jqminiframe.json&needNewCode=0&p=1&catZhida=0&remoteplace=sizer.newclient.next_song&w='+songs;
+		// 	xhr.onreadystatechange=function(){
+		// 		if(xhr.readyState==4&&xhr.status==0){
+		// 			console.log(xhr.responseText);
+		// 			console.log('1'+xhr.status);
+		// 		}
+		// 		//setInterval(function(){alert(xhr.status);},1000);
+		// 	}
+		// 	xhr.open('post',url,true);
+		// 	xhr.send(null);
+		// 	//alert(xhr.responseText);
+		// }
+	function load(){
+		var num = 2,
+    	name = '王菲',
+    	urlString = "http://s.music.qq.com/fcgi-bin/music_search_new_platform?t=0&n=2&aggr=1&cr=1&loginUin=0&format=json&inCharset=GB2312&outCharset=utf-8&notice=0&platform=jqminiframe.json&needNewCode=0&p=1&catZhida=0&remoteplace=sizer.newclient.next_song&w=成都";
+		$.post("ajax.php", {
+	        urlString
+	      	}, function(data) {
+	        data = JSON.parse(data)
+	        alert("Data: " + data + "\nStatus: " + status);
+      })
+	}
+	</script>
+</body>
+</html>

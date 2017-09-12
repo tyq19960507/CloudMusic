@@ -4,7 +4,7 @@ function $(selector){
 var player=(function(){
 	var modulation=function(){
 		//点击音量按钮出现音量调节栏
-		$('img').onclick=function(){
+		$('.horn').onclick=function(){
 			if(window.getComputedStyle($('.volumn'),null).display=='none'){
 				$('.volumn').style.display="block";
 			}else{
@@ -58,6 +58,14 @@ var player=(function(){
 			overS=overS>=10?overS:'0'+overS;
 			overTime.innerHTML='/'+overM+':'+overS;//分钟和秒数载入页面
 			var bartime=setInterval(function(){
+				////////////////////////bug
+				cur_time=Math.floor($('#audio').duration);//获得当前播放音乐的总时长
+				overM=Math.floor(cur_time/60);//时长的分钟
+				overS=cur_time%60;//时长的秒数
+				overM=overM>=10?overM:'0'+overM;
+				overS=overS>=10?overS:'0'+overS;
+				overTime.innerHTML='/'+overM+':'+overS;//分钟和秒数载入页面
+				///////////////////////////////////////////////////////
 				var now_time=Math.floor($('#audio').currentTime);//获得已播放的时间
 				timePercent=now_time/cur_time;
 				var nowM=Math.floor(now_time/60);

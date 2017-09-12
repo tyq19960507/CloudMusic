@@ -2,7 +2,7 @@
 	margin: 0px;
 	padding:0px;
 	font-family: 微软雅黑;
-}
+}	
 audio{
 	display: none;
 }
@@ -13,12 +13,23 @@ a{
 a:hover{
 	text-decoration: none;
 }
+header{
+	width: 800px;
+	margin: 0 auto;
+	height: auto;
+}
+header img{
+	width: 800px;
+	display: block;
+}
 .player{
 	width: 800px;
 	margin: 0 auto;
 	position: relative;
-	background-color: #fafafa;
+	background-color: #fefcfd;
 	font-size: 0px;
+	border-top: 1px solid #03a0e5;
+	border-bottom: 1px solid #03a0e5;
 }
 .player div{
 	vertical-align: top;
@@ -149,4 +160,72 @@ a:hover{
 	position: absolute;
 	top: -2px;
 	left: 100%;
+}
+#list{
+	position: relative;
+	width: 800px;
+	margin:0 auto;
+	background-color: #fefcfd;
+}
+.searchwraper{
+	width: 800px;
+	position: relative;
+	height: 50px;
+}
+.searchbox{
+	height: 50px;
+	position: absolute;
+	right: 0px;
+	top: 10px;
+}
+.searchbox input{
+	box-shadow: none;
+	height: 30px;
+	line-height: 30px;
+	padding: 1px;
+	text-align: left;
+	font-size: 12px;
+	vertical-align: top;
+}
+.searchbox #search{
+	height: 30px;
+	display: inline-block;
+	background-color: #fff;
+}
+.searchresult{
+	width: 400px;
+	display:inline-block;
+	background-color:#03a0e5;
+}
+.mylove{
+	width: 400px;
+	display:inline-block;
+	background-color:#79CBF0;
+}
+#sear_result,#lovemusic{
+	height: 30px;
+	display: inline-block;
+	width: 100%;
+	line-height: 30px;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+}
+._lovemusic{
+	display: none;
+}
+.handle{
+	margin-left: 300px;
+}
+._song{
+	font-size: 15px;
+	margin-left: 20px;
+}
+._songer{
+	font-size: 13px;
+	margin-left: 200px;
+}
+.musiclist a{
+	margin-left: 20px;
 }

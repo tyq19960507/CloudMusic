@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>播放器</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="icomoon/demo-files/demo.css">
+	<link rel="stylesheet" type="text/css" href="icomoon/style.css">
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="ajax.js"></script>
+</head>
+<body>
+	<audio src="music/关于青春.mp3" autoplay="autoplay" id="audio"></audio>
+	<!-- 标题图片 -->
+	<header>
+		<img src="image/title.png">
+	</header>
+	<!-- 播放控制区 -->
+	<div class="player">
+		<div class="left">
+			<p class="song">关于青春</p>
+			<p class="songer">张阳阳</p>
+			<!-- 歌曲播放情况 -->
+			<div class="audio_div">
+				<div class="audio_left">
+					<span id="pasttime">00:00</span>
+					<span id="overtime">/00:00</span>
+					<a href="javascript:;"><img src="image/yinliang.jpg" class="horn"></a>
+					<!-- 音量控制 -->
+					<div class="volumn" >
+						<div class="volumn_continer">
+							<div class="volumn_left"></div>
+							<div class="volumn_right"></div>
+							<div class="volumn_circle"></div>
+						</div>
+					</div>
+				</div>
+				<!-- 下载等操作 -->
+				<div class="audio_right">
+					<a href="####" title="单曲循环"><i class="icon icon-redo"></i></a>
+					<a href="####" title="下载"><i class="icon icon-download"></i></a>
+					<a href="####" title="删除"><i class="icon icon-bin"></i></a>
+					<a href="####" title="喜欢"><i class="icon icon-heart"></i></a>
+				</div>
+				<div class="audio_bottom">
+				<!-- 音乐播放进度线条 -->
+					<div class="audio_progress">
+						<div class="audio_line">
+							<div class="line_past"></div>
+							<div class="line_circle"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 收藏，下一曲等操作 -->
+			<div class="operation">
+				<div class="operation_logo">
+					<a href="####" title="上一曲"><i class="icon icon-previous"></i></a>
+					<a href="####" title="暂停" id="bofang"><i class="icon icon-pause" id="suspend"></i></a>
+					<a href="####" title="下一曲"><i class="icon icon-next"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<div class="fengmian">
+				<img src="image/zhangyangyang.jpg" class="photo">
+			</div>
+		</div>
+	</div>
+	<!-- 搜索列表区 -->
+	<div id="list">
+		<div class="searchwraper">
+		<!-- 搜索框 -->
+			<div class="searchbox">
+				<input type="text" placeholder="歌曲、歌手..." id="searchtext"><img src="image/search.png" id="search">
+			</div>
+		</div>
+		<!-- 列表切换 -->
+		<div class="searchresult"><p id="sear_result">搜索结果</p></div><div class="mylove"><p id="lovemusic">我喜欢</p></div>
+		<div class="_serachresult">
+			<div class="musiclist music1">
+				<span class="_song">关于青春</span>
+				<span class="_songer">张阳阳</span>
+				<span class="handle"><a href="####" title="播放" id="bofang"><i class="icon icon-play2" id="suspend"></i></a>
+				<a href="####" title="下载"><i class="icon icon-download"></i></a>
+				<a href="####" title="喜欢"><i class="icon icon-heart"></i></a></span>
+			</div>
+		</div>
+		<div class="_lovemusic">
+			<div class="musiclist music1">
+				<span class="_song">关于青春</span>
+				<span class="_songer">张阳阳</span>
+				<span class="handle"><a href="####" title="播放" id="bofang"><i class="icon icon-play2" id="suspend"></i></a>
+				<a href="####" title="下载"><i class="icon icon-download"></i></a>
+				<a href="####" title="删除"><i class="icon icon-bin"></i></a></span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="ajax.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>

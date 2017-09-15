@@ -1,0 +1,231 @@
+*{
+	margin: 0px;
+	padding:0px;
+	font-family: 微软雅黑;
+}	
+audio{
+	display: none;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:hover{
+	text-decoration: none;
+}
+header{
+	width: 800px;
+	margin: 0 auto;
+	height: auto;
+}
+header img{
+	width: 800px;
+	display: block;
+}
+.player{
+	width: 800px;
+	margin: 0 auto;
+	position: relative;
+	background-color: #fefcfd;
+	font-size: 0px;
+	border-top: 1px solid #03a0e5;
+	border-bottom: 1px solid #03a0e5;
+}
+.player div{
+	vertical-align: top;
+}
+.player .right,.player .left{
+	display: inline-block;
+}
+.right{
+	position: relative;
+	width: 40%;
+	height: 100%;
+	margin: 15px 0;
+}
+.fengmian{
+	width: 240px;
+	height: 240px;
+	border-radius: 50%;
+	margin:0 auto;
+	overflow: hidden;
+	vertical-align:middle;
+}
+.photo{
+	width: 100%;
+	height: 100%;
+}
+.left{
+	position: relative;
+	margin-left: 2%;
+	width: 58%;
+}
+.song{
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+.songer{
+	font-size: 18px;
+	color: #666;
+	margin:15px 0px;
+}
+#pasttime,#overtime{
+	font-size: 12px;
+	vertical-align: top;
+}
+.horn{
+	width: 20px;
+	margin-left: 20px;
+}
+.audio_left{
+	position: relative;
+	display: inline-block;
+}
+.audio_right{
+	position: relative;
+	display: inline-block;
+	margin-left: 170px;
+}
+.audio_right a{
+	margin-left: 20px;
+}
+.audio_right .icon{
+	font-size: 20px;
+}
+.audio_bottom{
+	padding-right: 20px;
+	height: 10px;
+}
+.audio_line{
+	height: 1px;
+	width: 100%;
+	background-color: #dadada;
+	margin-top: 10px;
+	position: relative;
+}
+.line_past{
+	height: 1px;
+	width: 0%;
+	background-color: #44bc7f;
+}
+.line_circle{
+	display: block;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #44bc7f;
+	margin-top: -3px;
+	position: absolute;
+}
+.operation{
+	margin-top: 35px;
+	padding-left: 70px;
+}
+.operation .icon{
+	font-size: 30px;
+}
+.operation_logo a{
+	margin:0 30px;
+}
+.volumn{
+	display: none;
+	width: 80px;
+	height: 30px;
+	background-color: #fff;
+	position: absolute;
+	top:-5px;
+	left: 110px;
+}
+.volumn_continer{
+	position: absolute;
+	width: 70px;
+	margin:14px auto;
+	left: 5px;
+}
+.volumn_left{
+	position: absolute;
+	width: 100%;
+	border-top: 1px solid #44bc7f;
+}
+.volumn_right{
+	width: 100%;
+	border-top: 1px solid #adadad;
+}
+.volumn_circle{
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background-color: #44bc7f;
+	position: absolute;
+	top: -2px;
+	left: 100%;
+}
+#list{
+	position: relative;
+	width: 800px;
+	margin:0 auto;
+	background-color: #fefcfd;
+}
+.searchwraper{
+	width: 800px;
+	position: relative;
+	height: 50px;
+}
+.searchbox{
+	height: 50px;
+	position: absolute;
+	right: 0px;
+	top: 10px;
+}
+.searchbox input{
+	box-shadow: none;
+	height: 30px;
+	line-height: 30px;
+	padding: 1px;
+	text-align: left;
+	font-size: 12px;
+	vertical-align: top;
+}
+.searchbox #search{
+	height: 30px;
+	display: inline-block;
+	background-color: #fff;
+}
+.searchresult{
+	width: 400px;
+	display:inline-block;
+	background-color:#03a0e5;
+}
+.mylove{
+	width: 400px;
+	display:inline-block;
+	background-color:#79CBF0;
+}
+#sear_result,#lovemusic{
+	height: 30px;
+	display: inline-block;
+	width: 100%;
+	line-height: 30px;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	margin: 0 auto;
+}
+._lovemusic{
+	display: none;
+}
+.handle{
+	margin-left: 300px;
+}
+._song{
+	font-size: 15px;
+	margin-left: 20px;
+}
+._songer{
+	font-size: 13px;
+	margin-left: 150px;
+}
+.musiclist a{
+	margin-left: 20px;
+}
